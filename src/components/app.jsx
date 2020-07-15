@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import FlatList from './flat_list.jsx';
+import Map from './map.jsx';
+
 
 class App extends Component {
   render() {
     return(
       <div>
-        <h2>Hola world</h2>
+        <FlatList />
+        <Map />
       </div>
       )
   }
