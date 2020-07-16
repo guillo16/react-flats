@@ -5,6 +5,7 @@
   background-position: center;
   color: white;
   position: relative;
+  border: 1px solid black;
   &.active {
     border: 10px solid red;
   }
@@ -48,4 +49,11 @@
 }
 .card-link:hover {
   opacity: 0.1;
+}
+
+.clicked {
+
+  color: red;
+
+
 }

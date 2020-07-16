@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import FlatList from './flat_list.jsx';
-import Map from './map.jsx';
-
+import SimpleMap from './map.jsx';
+import New from './prueba.jsx';
 
 class App extends Component {
   render() {
     return(
       <div>
         <FlatList />
-        <Map />
+        <New />
+        <div className="map-container">
+        <SimpleMap />
+        </div>
       </div>
       )
   }
