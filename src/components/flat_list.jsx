@@ -12,3 +12,5 @@ class FlatList extends Component {
 }
 
 export default FlatList
+
+
