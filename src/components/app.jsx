@@ -7,15 +7,20 @@ import Guillo from './example';
 
 
 class App extends Component {
+  constructor(props)  {
+    super(props);
+    this.state = {
+      selectedFlat: flats[0],
+      flats
+    }
+  }
 
   render() {
 
     return(
         <div>
-          <div className="flat-list">
-            <Guillo />
-            <FlatList flats={this.props.flats}/>
-          </div>
+        <Guillo />
+          <FlatList flats={this.state.flats} selectedFlats={this.state.selectedFlat}/>
           <div className="map-container">
             <GoogleMap />
           </div>
